@@ -1,0 +1,34 @@
+using System;
+public class main{
+	public static void Main(){
+		Console.Write(«Введите год:»);
+		int year = Convert.ToInt32(Console.ReadLine());
+		DateTime d1 = new DateTime(year,1,31);
+		Console.WriteLine(LastThursday(d1));
+		DateTime d2 = new DateTime(year,1,28);
+		Console.WriteLine(LastThursday(d2));
+		DateTime d3 = new DateTime(year,1,31);
+		Console.WriteLine(LastThursday(d3));
+		DateTime d4 = new DateTime(year,1,30);
+		Console.WriteLine(LastThursday(d4));
+		DateTime d5 = new DateTime(year,1,31);
+		Console.WriteLine(LastThursday(d5));
+		DateTime d6 = new DateTime(year,1,30);
+		Console.WriteLine(LastThursday(d6));
+		DateTime d7 = new DateTime(year,1,31);
+		Console.WriteLine(LastThursday(d7));
+		DateTime d8 = new DateTime(year,1,31);
+		Console.WriteLine(LastThursday(d8));
+		DateTime d9 = new DateTime(year,1,30);
+		Console.WriteLine(LastThursday(d9));
+		DateTime d10 = new DateTime(year,1,31);
+		Console.WriteLine(LastThursday(d10));
+		DateTime d11 = new DateTime(year,1,30);
+		Console.WriteLine(LastThursday(d11));
+		DateTime d12 = new DateTime(year,1,31);
+		Console.WriteLine(LastThursday(d12));
+
+		static DateTime LastThursday(DateTime n){
+			while (n.DayOfWeek != DayOfWeek.Thursday){
+				n = n.AddDays(-1);}
+			return n;}}}
