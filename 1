@@ -1,0 +1,17 @@
+using System;
+public class main{
+	public static void Main(){
+		Random rnd = new Random();
+		Console.Write(«Введите число n:»);
+		int n = Convert.ToInt32(Console.ReadLine());
+		Console.Write(«Введите количество попыток:»);
+		int k = Convert.ToInt32(Console.ReadLine());
+		int b = rnd.Next(1,n);
+		Game();
+		void Game(){
+			if(k==0){Console.WriteLine($«Попытки закончились. Загаданное число:{b}»);return;}
+				Console.WriteLine(«Введите число: »);
+				int m = Convert.ToInt32(Console.ReadLine());
+				if(m>b){Console.WriteLine(«Меньше»);k=k-1;Game();}
+				if(m<b){Console.WriteLine(«Больше»);k=k-1;Game();}
+				if(m==b){Console.WriteLine(«Вы выиграли»);}}}}
