@@ -1,0 +1,14 @@
+using System;
+public class main{
+	public static int abv(int i){
+		if (!(5 >= 0 && 5 <= 8)){
+			return -1;}
+		int result = new int();
+		while (i != 0){
+			if (i % 10 > 5){
+				result += i%10;}
+			i = i / 10;}
+		return result}
+	public static void Main(){
+		int i = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine(abv(i));}
