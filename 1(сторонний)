@@ -1,0 +1,8 @@
+using System;
+public class main{
+  public static void Main(){
+    Console.WriteLine(«Введите Ct, Cb, Kt:»);
+    int Ct = Convert.ToInt32(Console.ReadLine());
+    int Cb = Convert.ToInt32(Console.ReadLine());
+    int Kt = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine($«Ответ:{(Ct + Cb) * Kt}»);}}
